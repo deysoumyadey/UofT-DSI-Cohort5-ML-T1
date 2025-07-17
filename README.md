@@ -10,3 +10,4 @@ Team project for UofT-DSI cohort 5 Machine Learning Team 1
 - Excludes external factors (e.g., news, regulations)
 - Market behavior may change over time
 - Limited accuracy in short-term forecasting
+- Lacks fine-grained market sentiment, as the dataset provides only daily-level data
