@@ -36,6 +36,9 @@ Add your project plan to your team's README file.
 This plan should include details on:
 
 What value does your project bring to the industry?
+- Leverages machine learning to deliver accurate, next-day price predictions for top cryptocurrencies.
+- Turns raw market data into clear, actionable insights—built for speed, simplicity, and scalability.
+- Empowers traders with transparent, confidence-backed forecasts to manage risk and maximize opportunity.
 
 How will you answer your business question with your chosen dataset?
 
