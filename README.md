@@ -48,7 +48,13 @@ How will you answer your business question with your chosen dataset?
 - split the data into training and testing sets (e.g., 80/20 split), using only historical data to predict the future price,
 - then train a predictive model and evaluate its performance using metrics such as RMSE (Root Mean Square Error), MAE (Mean Absolute Error), and direction accuracy (whether the price went up or down).
 
-What are the risks and uncertainties?
+ What are the risks and uncertainties?
+- High market volatility and unpredictability
+- Missing or inconsistent historical data
+- Excludes external factors (e.g., news, regulations)
+- Market behavior may change over time
+- Limited accuracy in short-term forecasting
+- Lacks fine-grained market sentiment, as the dataset provides only daily-level data
 
 What methods and technologies will you use?
 
