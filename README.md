@@ -1,143 +1,128 @@
---
+---
 
-# 🧠 UofT-DSI-Cohort5-ML-T1
+# UofT-DSI-Cohort5-ML-T1
 
-**Team Project – Machine Learning Team 1 | UofT Data Science Institute (Cohort 5)**
+Team project for UofT-DSI cohort 5 Machine Learning Team 1
 
 ---
 
 ## 📌 Project Objective
 
-**Goal:**
-Develop a model to predict the **next-day closing price** of a selected cryptocurrency (e.g., Bitcoin, Ethereum) using its historical daily market data.
+Develop a model to predict the next-day closing price of a selected cryptocurrency (e.g., Bitcoin or Ethereum) using its historical daily market data.
 
-**Key Tasks:**
+This includes:
 
-* Utilize features such as:
-  `Open`, `High`, `Low`, `Close`, `Volume`, and derived indicators (e.g., spread, moving averages).
-* Predict a **numeric value** for tomorrow’s closing price.
+* Using features such as daily open, high, low, close, volume, and other derived indicators (e.g., spread, moving averages)
+* Predicting a numeric value for tomorrow’s closing price
 
-**Example Output:**
+**Example output:**
+The model predicts that BTC’s closing price tomorrow will be **\$31,750 ± \$120**
 
-> "The model predicts that BTC’s closing price tomorrow will be **\$31,750 ± \$120**"
->
-> * \$31,750 → Predicted Price
-> * ± \$120 → Error Margin or Confidence Interval
+* \$31,750 = predicted price
+* ± \$120 = error margin or confidence range
 
 ---
 
-## 🧹 Dataset Cleaning Overview
+## 🧹 Clean dataset (crypto-markets.csv)
 
-**Source Dataset:** `crypto-markets.csv` (from [Kaggle](https://www.kaggle.com/datasets/jessevent/all-crypto-currencies))
-
-**Steps Taken:**
-
-* Identified essential columns
-* Dropped unused fields
-* Defined prediction target as **Next-Day Close Price**
-
-✅ Objective and output format are finalized.
+* Identify essential columns
+* Drop unused fields
+* Define the prediction target (next-day close)
+* Objective and example output ready
 
 ---
 
-## 💼 Business Value & Stakeholders
+## 🔍 Dig deeper into your business question to understand the value you will be delivering
 
-### 🎯 Who Will Use This?
+**Who are your stakeholders and why do they care about your project?**
+**Ans:**
 
-* **Crypto Traders / Investors**: To make informed buy/sell decisions.
-* **Financial Analysts / Portfolio Managers**: For optimizing asset allocation.
-* **Data Science Teams**: To benchmark or develop forecasting models.
-
-### 💡 Value to the Industry
-
-* Provides **confidence-backed predictions** to support risk-managed crypto trading.
-* Converts raw crypto market data into **actionable insights**.
-* Offers a **scalable, transparent solution** built on proven ML architecture.
+* Crypto Traders / Investors: Use predictions to make a profit or avoid a loss.
+* Financial Analysts / Portfolio Managers: Use forecasts to optimize allocations.
+* Data Science Teams: Interested in building or validating models
 
 ---
 
-## 🔍 Data Exploration & Limitations
+## 📊 Explore your dataset
 
-### Is the Data Clean?
+**Is it clean? What are its limitations? Will you be able to answer your question with this dataset?**
+**Start your analysis:**
 
-* **Mostly clean**, but requires:
-
-  * Removal of anomalies
-  * Handling of missing values
-  * Verification of consistency in coin identifiers
-
-### Limitations:
-
-* No **policy or regulation features** (e.g., government crypto bans)
-* Daily-level data lacks **real-time sentiment signals**
-* **High volatility** may affect model reliability
+* Policy is missing, e.g. govt. mandates towards the transaction
 
 ---
 
-## 📈 How We'll Answer the Business Question
+## 📁 Add your project plan to your team's README file
 
-Using the Kaggle crypto dataset, we will:
+This plan should include details on:
 
-* Preprocess for **clean time-series data**
-* Engineer features such as:
+### ✅ What value does your project bring to the industry?
 
-  * Lag variables
-  * Moving averages
-  * Momentum indicators
-* Split the dataset (e.g., 80/20) to ensure **temporal validation**
-* Train regression models and evaluate using:
-
-  * **RMSE** (Root Mean Square Error)
-  * **MAE** (Mean Absolute Error)
-  * **Direction Accuracy** (whether price goes up or down)
+* Leverages machine learning to deliver accurate, next-day price predictions for top cryptocurrencies.
+* Turns raw market data into clear, actionable insights—built for speed, simplicity, and scalability.
+* Empowers traders with transparent, confidence-backed forecasts to manage risk and maximize opportunity.
 
 ---
 
-## ⚠️ Risks & Uncertainties
+### 📈 How will you answer your business question with your chosen dataset?
 
-* Crypto market **volatility** and unpredictability
-* **Missing or inconsistent** historical data
-* Exclusion of **external drivers** (e.g., news, regulations)
-* **Model drift** over time as market patterns shift
-* Dataset lacks **intraday** data granularity and **sentiment analysis**
+**Answer:**
+The dataset from Kaggle provides information about the price daily data for thousands of coins, including: Opening price, High and low price, Volume, Market capitalization, and Closing price. We will:
 
----
-
-## 🧠 ML Models Considered
-
-| Model Type                               | Description                                   | When to Use                              |
-| ---------------------------------------- | --------------------------------------------- | ---------------------------------------- |
-| **Dense Neural Networks (DNN)**          | Input → Dense Layers → Output                 | Great for structured/tabular data        |
-| **Recurrent Neural Networks (RNN/LSTM)** | Input Sequence → LSTM/GRU → Dense → Output    | Best for time-series forecasting         |
-| **Transformer Models**                   | Input → Transformer Encoders → Dense → Output | Useful for long-range dependencies       |
-| **Autoencoders for Regression**          | Input → Encoder → (Decoder) → Output          | Ideal for noisy or high-dimensional data |
+* ensure clean time-series data with no missing or anomalous values
+* create features that help capture temporal patterns (e.g., lag variables, moving averages, momentum indicators)
+* split the data into training and testing sets (e.g., 80/20 split), using only historical data to predict the future price
+* then train a predictive model and evaluate its performance using metrics such as RMSE (Root Mean Square Error), MAE (Mean Absolute Error), and direction accuracy (whether the price went up or down)
 
 ---
 
-## 📋 Project Plan (Team Tasks & Contributions)
+### ⚠️ What are the risks and uncertainties?
 
-* Assign **data cleaning**, **feature engineering**, **modeling**, and **evaluation** to team members
-* Discuss and implement **cross-validation**, **hyperparameter tuning**, and **error analysis**
-* Write up results with **visualizations**, **metrics**, and **business implications**
-
----
-
-## ✅ Mandatory Team Contributions
-
-1. Each team member must create **at least 1 Pull Request (PR)**.
-2. **PR creators cannot merge their own PRs** — another member must **review**, **approve**, and merge.
-3. PR reviews must ensure:
-
-   * Code quality and readability
-   * Functionality and reproducibility
-   * Alignment with the project objective
+* High market volatility and unpredictability
+* Missing or inconsistent historical data
+* Excludes external factors (e.g., news, regulations)
+* Market behavior may change over time
+* Limited accuracy in short-term forecasting
+* Lacks fine-grained market sentiment, as the dataset provides only daily-level data
 
 ---
 
-## 📝 TODO List
+### 🧠 What methods and technologies will you use?
 
-* [ ] Investigate the **origin of the `rank` column**
-  → Suggestion: Try calculating rank from market cap, volume, or other columns and compare.
+**Model Examples to Consider:**
+
+1. **Dense Neural Networks (Fully Connected Networks)**
+   Architecture: Input layer → Multiple dense (fully connected) layers with activation functions (e.g., ReLU) → Output layer (linear activation for regression).
+   **When to Use:** Suitable for structured data like numerical or categorical features (e.g., predicting house prices based on features like size and location).
+
+2. **Recurrent Neural Networks (RNNs) / Long Short-Term Memory (LSTM) Networks**
+   Architecture: Input (sequence) → LSTM/GRU layers → Dense layers → Output (linear).
+   **When to Use:** Best for time-series regression, such as forecasting sales or predicting energy consumption based on historical data.
+
+3. **Transformer-Based Models for Regression**
+   Architecture: Input → Transformer encoder layers (multi-head self-attention) → Dense layers → Output (linear).
+   **When to Use:** Useful for complex sequential data or when capturing long-range dependencies (e.g., predicting trends in large time-series datasets).
+
+4. **Autoencoders for Regression**
+   Architecture: Input → Encoder (dense/conv layers) → Bottleneck → Decoder (optional) → Dense output (linear).
+   **When to Use:** Effective for regression with noisy or high-dimensional data, such as denoising sensor data or predicting values from compressed representations.
 
 ---
 
+## 👥 Assign data cleaning and analysis tasks to team members
+
+---
+
+## ✅ TODO
+
+1. Find the origin of rank. Suggestion: Try to calc rank from different columns and check if they match with the given rank.
+
+---
+
+## 📌 Mandatory contributions towards the project
+
+1. Everyone creates at least 1 Pull request.
+2. Person creating the PR won't merge the PR, someone else will verify, approve, and (may\*) merge.
+3.
+
+---
