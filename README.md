@@ -51,21 +51,6 @@ How will you answer your business question with your chosen dataset?
 What are the risks and uncertainties?
 
 What methods and technologies will you use?
-
-
-Assign data cleaning and analysis tasks to team members.
-
-
-
-TODO:
-1. Find the origin of rank. Suggestion: Try to calc rank from different columns and check if they match with the given rank.
-
-
-
-Mandatory contributions towards the project:
-1. Everyone creates at least 1 Pull request.
-2. Person creating the PR won't merge the PR, someone else will verify, approve, and (may*) merge.
-3. 
 Model Examples to Consider:
 1. Dense Neural Networks (Fully Connected Networks)
 Architecture: Input layer → Multiple dense (fully connected) layers with activation functions (e.g., ReLU) → Output layer (linear activation for regression).
@@ -82,3 +67,18 @@ When to Use: Useful for complex sequential data or when capturing long-range dep
 4. Autoencoders for Regression
 Architecture: Input → Encoder (dense/conv layers) → Bottleneck → Decoder (optional) → Dense output (linear).
 When to Use: Effective for regression with noisy or high-dimensional data, such as denoising sensor data or predicting values from compressed representations.
+
+
+Assign data cleaning and analysis tasks to team members.
+
+
+
+TODO:
+1. Find the origin of rank. Suggestion: Try to calc rank from different columns and check if they match with the given rank.
+
+
+
+Mandatory contributions towards the project:
+1. Everyone creates at least 1 Pull request.
+2. Person creating the PR won't merge the PR, someone else will verify, approve, and (may*) merge.
+3. 
