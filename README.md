@@ -37,9 +37,7 @@ The model predicts that BTC’s closing price tomorrow will be **\$31,750 ± \$1
 **Who are your stakeholders and why do they care about your project?**
 **Ans:**
 
-* Crypto Traders / Investors: Use predictions to make a profit or avoid a loss.
-* Financial Analysts / Portfolio Managers: Use forecasts to optimize allocations.
-* Data Science Teams: Interested in building or validating models
+
 
 ---
 
@@ -55,24 +53,37 @@ The model predicts that BTC’s closing price tomorrow will be **\$31,750 ± \$1
 ## 📁 Add your project plan to your team's README file
 
 This plan should include details on:
-
+<!--
 ### ✅ What value does your project bring to the industry?
 
-* Leverages machine learning to deliver accurate, next-day price predictions for top cryptocurrencies.
-* Turns raw market data into clear, actionable insights—built for speed, simplicity, and scalability.
-* Empowers traders with transparent, confidence-backed forecasts to manage risk and maximize opportunity.
+Our project provides a practical machine learning solution for forecasting next-day cryptocurrency prices. In a market known for high volatility and uncertainty, this kind of predictive tool can help traders and investors make smarter decisions, manage risk, and identify profitable opportunities.
+
+It delivers value in three main ways:
+
+Timeliness: Forecasts are updated daily using the latest market data.
+
+Transparency: Predictions include a confidence range, not just a raw number—giving users a clearer picture of expected variance.
+
+Scalability: The model is flexible and can adapt to any cryptocurrency with reliable historical data, making it a great fit for fintech platforms, analysts, and portfolio managers.
+
+In short, we turn raw crypto market data into clear, actionable insights—built for speed, simplicity, and strategic decision-making.
+
+
 
 ---
 
 ### 📈 How will you answer your business question with your chosen dataset?
 
 **Answer:**
-The dataset from Kaggle provides information about the price daily data for thousands of coins, including: Opening price, High and low price, Volume, Market capitalization, and Closing price. We will:
+The dataset from Kaggle provides information about the price daily data for thousands of coins, including: Opening price, High and low price, Volume, Market capitalization, and Closing price. We will: ..
 
 * ensure clean time-series data with no missing or anomalous values
 * create features that help capture temporal patterns (e.g., lag variables, moving averages, momentum indicators)
 * split the data into training and testing sets (e.g., 80/20 split), using only historical data to predict the future price
 * then train a predictive model and evaluate its performance using metrics such as RMSE (Root Mean Square Error), MAE (Mean Absolute Error), and direction accuracy (whether the price went up or down)
+
+* So we’re not just throwing a model at the data—we’re engineering it to learn temporal patterns and trends that would otherwise go unnoticed.
+-->
 
 ---
 
@@ -84,6 +95,9 @@ The dataset from Kaggle provides information about the price daily data for thou
 * Market behavior may change over time
 * Limited accuracy in short-term forecasting
 * Lacks fine-grained market sentiment, as the dataset provides only daily-level data
+
+So while our project has value, it's not a magic bullet—it’s a decision-support tool, not a decision-maker.
+-->
 
 ---
 
