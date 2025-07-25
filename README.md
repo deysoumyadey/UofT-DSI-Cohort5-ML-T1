@@ -67,7 +67,7 @@ This plan should include details on:
 ### 📈 How will you answer your business question with your chosen dataset?
 
 **Answer:**
-The dataset from Kaggle provides information about the price daily data for thousands of coins, including: Opening price, High and low price, Volume, Market capitalization, and Closing price. We will:
+The dataset from Kaggle provides information about the price daily data for thousands of coins, including: Opening price, High and low price, Volume, Market capitalization, and Closing price. We will: ..
 
 * ensure clean time-series data with no missing or anomalous values
 * create features that help capture temporal patterns (e.g., lag variables, moving averages, momentum indicators)
