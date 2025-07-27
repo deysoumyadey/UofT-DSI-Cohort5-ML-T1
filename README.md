@@ -128,6 +128,6 @@ If we had more time, there are several exciting directions we’d explore to ext
 
 - [Afsaneh Zahmatkesh]()
 - [Matias Velastegui]()
-- [M.​Hashim Siddiqui]()
+- [M.​Hashim Siddiqui](Team_Videos/presentation-AfsaneZahmatkesh)
 - [Soumya Dey](Team_Videos/SoumyaDey.mp4)
 - [Zhen Xie]() 
