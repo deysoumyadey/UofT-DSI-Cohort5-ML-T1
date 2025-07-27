@@ -1,142 +1,133 @@
----
+# ₿ Cryptocurrency Price Prediction Project
 
-# UofT-DSI-Cohort5-ML-T1
-
-Team project for UofT-DSI cohort 5 Machine Learning Team 1
+## 👥 Team Project – University of Toronto, Data Science Institute  
+**Cohort 5 – Machine Learning – Team 1**  
+**Team Members:**  
+- Afsaneh Zahmatkesh
+- Matias Velastegui
+- M.​Hashim Siddiqui
+- Soumya Dey
+- Zhen Xie 
 
 ---
 
 ## 📌 Project Objective
 
-Develop a model to predict the next-day closing price of a selected cryptocurrency (e.g., Bitcoin or Ethereum) using its historical daily market data.
+Develop a model to **predict the next-day closing price** of a selected cryptocurrency (e.g., Bitcoin or Ethereum) using its historical daily market data.
 
-This includes:
+**This includes:**
+- Using features such as daily open, high, low, close, volume, and other derived indicators (e.g., spread, moving averages).
+- Predicting a numeric value for tomorrow’s closing price.
 
-* Using features such as daily open, high, low, close, volume, and other derived indicators (e.g., spread, moving averages)
-* Predicting a numeric value for tomorrow’s closing price
-
-**Example output:**
-The model predicts that BTC’s closing price tomorrow will be **\$31,750 ± \$120**
-
-* \$31,750 = predicted price
-* ± \$120 = error margin or confidence range
+**Example Output:**  
+> The model predicts that BTC’s closing price tomorrow will be **\$31,750 ± \$120**  
+> - \$31,750 = predicted price  
+> - ± \$120 = error margin or confidence range
 
 ---
 
-## 🧹 Clean dataset (crypto-markets.csv)
+## 🎯 Stakeholders & Why They Care
 
-* Identify essential columns
-* Drop unused fields
-* Define the prediction target (next-day close)
-* Objective and example output ready
-
----
-
-## 🔍 Dig deeper into your business question to understand the value you will be delivering
-
-**Who are your stakeholders and why do they care about your project?**
-**Ans:**
-
-
+- **Crypto Traders / Investors:** Use predictions to make a profit or avoid losses.
+- **Financial Analysts / Portfolio Managers:** Leverage forecasts to optimize portfolio allocations.
+- **Data Science Teams:** Validate or build upon forecasting models for financial data.
 
 ---
 
-## 📊 Explore your dataset
+## 📊 Dataset Overview
 
-**Is it clean? What are its limitations? Will you be able to answer your question with this dataset?**
-**Start your analysis:**
+**Initial Analysis:**
+- The dataset includes historical daily market data such as open, high, low, close, volume, and market cap.
+- It is fairly clean and usable for time-series modeling but has some limitations.
 
-* Policy is missing, e.g. govt. mandates towards the transaction
-
----
-
-## 📁 Add your project plan to your team's README file
-
-This plan should include details on:
-<!--
-### ✅ What value does your project bring to the industry?
-
-Our project provides a practical machine learning solution for forecasting next-day cryptocurrency prices. In a market known for high volatility and uncertainty, this kind of predictive tool can help traders and investors make smarter decisions, manage risk, and identify profitable opportunities.
-
-It delivers value in three main ways:
-
-Timeliness: Forecasts are updated daily using the latest market data.
-
-Transparency: Predictions include a confidence range, not just a raw number—giving users a clearer picture of expected variance.
-
-Scalability: The model is flexible and can adapt to any cryptocurrency with reliable historical data, making it a great fit for fintech platforms, analysts, and portfolio managers.
-
-In short, we turn raw crypto market data into clear, actionable insights—built for speed, simplicity, and strategic decision-making.
-
-
+**Limitations:**
+- Lacks external macroeconomic policies or government regulations data.
+- Does not include sentiment analysis or news-based signals.
+- Political and global events affecting the market are not captured.
 
 ---
 
-### 📈 How will you answer your business question with your chosen dataset?
+## ✅ Industry Value Proposition
 
-**Answer:**
-The dataset from Kaggle provides information about the price daily data for thousands of coins, including: Opening price, High and low price, Volume, Market capitalization, and Closing price. We will: ..
+This project delivers a practical machine learning solution for forecasting cryptocurrency prices in a highly volatile and fast-moving market.
 
-* ensure clean time-series data with no missing or anomalous values
-* create features that help capture temporal patterns (e.g., lag variables, moving averages, momentum indicators)
-* split the data into training and testing sets (e.g., 80/20 split), using only historical data to predict the future price
-* then train a predictive model and evaluate its performance using metrics such as RMSE (Root Mean Square Error), MAE (Mean Absolute Error), and direction accuracy (whether the price went up or down)
+**Value Highlights:**
+- **⏱️ Timeliness:** Daily forecasts based on the latest market data.
+- **🔍 Transparency:** Each prediction includes a confidence range, not just a point estimate.
+- **📈 Scalability:** Can adapt to any coin with historical data, ideal for fintech platforms, analysts, and investors.
 
-* So we’re not just throwing a model at the data—we’re engineering it to learn temporal patterns and trends that would otherwise go unnoticed.
--->
+> In short: we transform raw crypto market data into **clear, actionable insights** for smarter decision-making.
 
 ---
 
-### ⚠️ What are the risks and uncertainties?
+## 📈 Business Question Strategy
 
-* High market volatility and unpredictability
-* Missing or inconsistent historical data
-* Excludes external factors (e.g., news, regulations)
-* Market behavior may change over time
-* Limited accuracy in short-term forecasting
-* Lacks fine-grained market sentiment, as the dataset provides only daily-level data
+**How do we answer our question using the dataset?**
 
-So while our project has value, it's not a magic bullet—it’s a decision-support tool, not a decision-maker.
--->
+The dataset provides daily price data including:
+- Opening price, high, low, close, volume, and market cap for thousands of cryptocurrencies.
 
----
+**Steps to Model:**
+- Clean the data to remove anomalies or missing values.
+- Engineer features: lag variables, moving averages, volatility metrics.
+- Split into training/testing datasets (e.g., 80/20).
+- Train models and evaluate using:
+  - **RMSE** (Root Mean Square Error)
+  - **MAE** (Mean Absolute Error)
+  - **Direction Accuracy** (whether price moved up/down)
 
-### 🧠 What methods and technologies will you use?
-
-**Model Examples to Consider:**
-
-1. **Dense Neural Networks (Fully Connected Networks)**
-   Architecture: Input layer → Multiple dense (fully connected) layers with activation functions (e.g., ReLU) → Output layer (linear activation for regression).
-   **When to Use:** Suitable for structured data like numerical or categorical features (e.g., predicting house prices based on features like size and location).
-
-2. **Recurrent Neural Networks (RNNs) / Long Short-Term Memory (LSTM) Networks**
-   Architecture: Input (sequence) → LSTM/GRU layers → Dense layers → Output (linear).
-   **When to Use:** Best for time-series regression, such as forecasting sales or predicting energy consumption based on historical data.
-
-3. **Transformer-Based Models for Regression**
-   Architecture: Input → Transformer encoder layers (multi-head self-attention) → Dense layers → Output (linear).
-   **When to Use:** Useful for complex sequential data or when capturing long-range dependencies (e.g., predicting trends in large time-series datasets).
-
-4. **Autoencoders for Regression**
-   Architecture: Input → Encoder (dense/conv layers) → Bottleneck → Decoder (optional) → Dense output (linear).
-   **When to Use:** Effective for regression with noisy or high-dimensional data, such as denoising sensor data or predicting values from compressed representations.
+> We're not just building a model—we’re **engineering a learning system** to uncover patterns in crypto price movements.
 
 ---
 
-## 👥 Assign data cleaning and analysis tasks to team members
+## ⚠️ Risks & Uncertainties
+
+- High volatility and unpredictability of the market.
+- Incomplete historical or transactional data.
+- Excludes external data like regulations, news, or social sentiment.
+- Model performance may degrade as market behavior evolves.
+- Dataset is at daily frequency—misses intra-day market signals.
+
+> This tool supports decisions, but **does not guarantee accuracy**—especially in unpredictable or news-driven environments.
 
 ---
 
-## ✅ TODO
+## 🧠 Methods & Technologies
 
-1. Find the origin of rank. Suggestion: Try to calc rank from different columns and check if they match with the given rank.
+### Model Architectures Considered:
+
+1. **Dense Neural Networks (Fully Connected)**
+   - Input → Dense layers (ReLU) → Output (Linear)
+   - Best for structured tabular data with numerical/categorical features.
+
+2. **RNNs / LSTM Networks**
+   - Input Sequence → LSTM/GRU → Dense Output
+   - Suitable for modeling time-series dependencies and temporal signals.
+
+3. **Transformer-Based Models**
+   - Input → Multi-head self-attention layers → Dense → Output
+   - Excellent for capturing long-term dependencies in large-scale sequential data.
+
+4. **Autoencoders**
+   - Input → Encoder → Bottleneck → Decoder → Output
+   - Useful for dimensionality reduction and denoising before regression.
 
 ---
 
-## 📌 Mandatory contributions towards the project
+## 🚀 Future Enhancements
 
-1. Everyone creates at least 1 Pull request.
-2. Person creating the PR won't merge the PR, someone else will verify, approve, and (may\*) merge.
-3.
+If we had more time, there are several exciting directions we’d explore to extend the project:
 
----
+- **Multi-Currency Modeling:** Incorporate multiple cryptocurrencies in a unified model to capture interdependencies and market correlations.
+- **Sentiment Integration:** Leverage headline news and social media sentiment (e.g., Twitter, Reddit) to enrich the model with real-time public opinion signals.
+- **Explainable AI (XAI):** Introduce interpretability tools like SHAP or LIME to help users understand the *why* behind each prediction.
+- **Real-Time Prediction API:** Deploy the model via a live API for dynamic, real-time decision-making—moving from analysis to action.
+
+
+## 🎥 Team Video Links / Deliverables
+
+- [Afsaneh Zahmatkesh]()
+- [Matias Velastegui]()
+- [M.​Hashim Siddiqui]()
+- [Soumya Dey](Team_Vidoes\SoumyaDey.mp4)
+- [Zhen Xie]() 
