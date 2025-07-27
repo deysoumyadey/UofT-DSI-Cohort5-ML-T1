@@ -130,4 +130,4 @@ If we had more time, there are several exciting directions we’d explore to ext
 - [Matias Velastegui]()
 - [M.​Hashim Siddiqui]()
 - [Soumya Dey](Team_Videos/SoumyaDey.mp4)
-- [Zhen Xie]() 
+- [Zhen Xie](https://drive.google.com/file/d/1brub6Gl1waO02YGDFKSNH1grrTgJsNQB/view?usp=sharing) 
