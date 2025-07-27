@@ -126,7 +126,7 @@ If we had more time, there are several exciting directions we’d explore to ext
 
 ## 🎥 Team Video Links / Deliverables
 
-- [Afsaneh Zahmatkesh]()
+- [Afsaneh Zahmatkesh](Team_Videos/presentation-AfsaneZahmatkesh.pdf)
 - [Matias Velastegui]()
 - [M.​Hashim Siddiqui]()
 - [Soumya Dey](Team_Videos/SoumyaDey.mp4)
