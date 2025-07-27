@@ -62,4 +62,8 @@ TODO:
 Mandatory contributions towards the project:
 1. Everyone creates at least 1 Pull request.
 2. Person creating the PR won't merge the PR, someone else will verify, approve, and (may*) merge.
-3. 
+
+
+VIDEO LINK
+
+Matias Video: https://drive.google.com/file/d/1juVIG9w5UicTEYVyPKTjlri8n0f5J7x3/view?usp=drive_link 
