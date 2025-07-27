@@ -129,5 +129,5 @@ If we had more time, there are several exciting directions we’d explore to ext
 - [Afsaneh Zahmatkesh]()
 - [Matias Velastegui]()
 - [M.​Hashim Siddiqui]()
-- [Soumya Dey](final_branch/Team_Videos/SoumyaDey.mp4)
+- [Soumya Dey](Team_Videos/SoumyaDey.mp4)
 - [Zhen Xie]() 
